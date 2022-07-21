@@ -12,8 +12,11 @@ public class CreateBoardReqDto {
 	private int usercode;
 	private String content;
 	public Board toEntity() {
-		// TODO Auto-generated method stub
-		return null;
+		return Board.builder()
+				.title(title)
+				.usercode(usercode)
+				.content(content)
+				.build();
 	}
 
 }
